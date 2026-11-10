@@ -386,7 +386,7 @@ footer {
    ================================================= */
 .wa {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 10rem;
   right: 1.5rem;
   z-index: 50;
   width: 3.5rem;
@@ -460,4 +460,61 @@ footer {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* ===================================================
+   REGRAS APENAS PARA MOBILE (Max-width: 768px)
+   =================================================== */
+@media screen and (max-width: 768px) {
+
+  /* 1. Trava qualquer scroll horizontal indesejado */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* 2. Aumenta o respiro no topo para empurrar o "CIRURGIÃ-DENTISTA" para baixo do header */
+  .hero {
+    padding-top: 9.5rem !important; /* Aumentado de 7rem para 9.5rem para afastar do header */
+  }
+
+  /* 3. Foto do consultório (Hero): formato elegante no mobile */
+  .imgbox img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 1.25rem !important;
+  }
+
+  /* 4. SEÇÃO SOBRE: Centraliza a foto da Dra. Isabella perfeitamente */
+  .about .wrap {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .about .portrait {
+    width: 200px !important;
+    height: 200px !important;
+    max-width: 100% !important;
+    margin: 0 auto 2rem auto !important;
+    display: block !important;
+  }
+
+  .about-content-box h2 {
+    font-size: 2.75rem !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* ===================================================
+   BOTÃO WHATSAPP (Aplica a ambas as telas)
+   =================================================== */
+.wa {
+  bottom: 7rem !important;
+  z-index: 99999 !important;
 }
