@@ -1026,3 +1026,9 @@ section#tratamentos.treat {
 section#contato.wrap.contact {
   padding-top: 2rem !important;
 }
+
+/* Alinha verticalmente os itens de contato/localização que possuem ícone */
+.contact-item, .info-item /* ou a classe exata que engloba o ícone e o texto */ {
+  display: flex;
+  align-items: center;
+}
