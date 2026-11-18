@@ -9,3 +9,12 @@ var io = new IntersectionObserver(function (es) {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}, { passive: true });
