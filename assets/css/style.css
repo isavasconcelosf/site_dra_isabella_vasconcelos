@@ -1032,3 +1032,18 @@ section#contato.wrap.contact {
   display: flex;
   align-items: center;
 }
+
+/* Deixa os títulos dos cards mais leves e elegantes, sem aquele negrito pesado */
+.card h3 {
+  font-weight: 500; /* ou 600, dependendo de como preferir */
+}
+
+/* Deixa o nome da Dra. Isabella no header leve e refinado (sem negrito exagerado) */
+header .logo, .logo-container .logo {
+  font-weight: 400; /* ou 500, se preferir um pouquinho mais marcado */
+}
+
+/* Deixa os títulos dos cards suaves */
+.card h3 {
+  font-weight: 500;
+}
